@@ -51,7 +51,9 @@ namespace LeetCode
                 }
                 else if (ch == ')')
                 {
-                    res = stack.Pop() * res + stack.Pop();
+                    int tempSign = stack.Pop();
+                    int tempRes = stack.Pop();
+                    res = tempRes + (res * tempSign);
                 }
             }
 
