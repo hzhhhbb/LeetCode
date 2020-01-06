@@ -6,12 +6,13 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            string[] a = {"5", "2", "C", "D", "+"};
-            string[] b = {"5", "-2", "4", "C", "D", "9", "+", "+" };
-            BaseballGame game=new BaseballGame();
+           int[] nums1 = {4, 1, 2};
+           int[] nums2 = { 1, 2, 3, 4 };
+            NextGreaterElementI next=new NextGreaterElementI();
 
-            Console.WriteLine("should be 30,{0}",game.CalPoints(a));
-            Console.WriteLine("should be 27,{0}",game.CalPoints(b));
-    }
+            Console.WriteLine("should be [-1,3,-1],{0}", next.NextGreaterElement(nums1,nums2));
+
+            Console.ReadKey();
+        }
     }
 }
