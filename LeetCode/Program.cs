@@ -6,17 +6,12 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            string a = " 200-100 + 20 ";
-            string b = " 20+23+3 ";
-            string c = "(10+(30+50+30)-30)+(60+80)";
-            string d= "(10+(4+5+3)-3)+(6+80)";
-            SimpleCalculator calculator=new SimpleCalculator();
-            Console.WriteLine("result should be 120,result={0}",calculator.Calculate(a));
-            Console.WriteLine("result should be 46,result={0}",calculator.Calculate(b));
-            Console.WriteLine("result should be 230,result={0}",calculator.Calculate(c));
-            Console.WriteLine("result should be 105,result={0}",calculator.Calculate(d));
+            string[] a = {"5", "2", "C", "D", "+"};
+            string[] b = {"5", "-2", "4", "C", "D", "9", "+", "+" };
+            BaseballGame game=new BaseballGame();
 
-            Console.ReadKey();
-        }
+            Console.WriteLine("should be 30,{0}",game.CalPoints(a));
+            Console.WriteLine("should be 27,{0}",game.CalPoints(b));
+    }
     }
 }
