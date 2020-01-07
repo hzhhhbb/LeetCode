@@ -6,11 +6,21 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-           int[] nums1 = {4, 1, 2};
-           int[] nums2 = { 1, 2, 3, 4 };
-            NextGreaterElementI next=new NextGreaterElementI();
+            MyCircularQueue circularQueue = new MyCircularQueue(6); 
 
-            Console.WriteLine("should be [-1,3,-1],{0}", next.NextGreaterElement(nums1,nums2));
+            Console.WriteLine("should be true,{0}",circularQueue.EnQueue(6)); 
+            Console.WriteLine("should be 6,{0}", circularQueue.Rear());  
+            Console.WriteLine("should be 6,{0}", circularQueue.Rear()); 
+    
+            Console.WriteLine("should be true,{0}", circularQueue.DeQueue());
+            Console.WriteLine("should be true,{0}", circularQueue.EnQueue(5));
+            Console.WriteLine("should be 5,{0}", circularQueue.Rear());
+            Console.WriteLine("should be true,{0}", circularQueue.DeQueue());
+            Console.WriteLine("should be -1,{0}",circularQueue.Front());
+            Console.WriteLine("should be false,{0}", circularQueue.DeQueue());
+            Console.WriteLine("should be false,{0}", circularQueue.DeQueue());
+            Console.WriteLine("should be false,{0}", circularQueue.DeQueue());
+
 
             Console.ReadKey();
         }
