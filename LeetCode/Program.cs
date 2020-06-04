@@ -55,6 +55,17 @@ namespace LeetCode
 
             #endregion
 
+            #region 752. 打开转盘锁
+
+            // {
+            //     string[] deadends={"8887","8889","8878","8898","8788","8988","7888","9888"};
+            //     string target = "8888";
+            //     Console.WriteLine(new OpenLockClass().OpenLock(deadends,target));
+            //
+            // }
+
+            #endregion
+
             Console.ReadKey();
         }
     }
