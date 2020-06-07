@@ -66,6 +66,29 @@ namespace LeetCode
 
             #endregion
 
+            #region 279.完全平方数
+
+            // {
+            //    
+            //     Console.WriteLine($"组成{43}和的完全平方数的个数最少是：{new PerfectSquares().NumSquares(43)}");
+            //     Console.WriteLine();
+            //     
+            //     Console.WriteLine($"组成{12}和的完全平方数的个数最少是：{new PerfectSquares().NumSquares(12)}");
+            //     Console.WriteLine();
+            //     
+            //     
+            //     Console.WriteLine($"组成{13}和的完全平方数的个数最少是：{new PerfectSquares().NumSquares(13)}");
+            //     Console.WriteLine();
+            //     
+            //     Console.WriteLine($"组成{14}和的完全平方数的个数最少是：{new PerfectSquares().NumSquares(14)}");
+            //     Console.WriteLine();
+            //     
+            //     Console.WriteLine($"组成{48}和的完全平方数的个数最少是：{new PerfectSquares().NumSquares(48)}");
+            //     Console.WriteLine();
+            // }
+
+            #endregion
+
             Console.ReadKey();
         }
     }
