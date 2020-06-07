@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace LeetCode
 {
@@ -89,6 +90,25 @@ namespace LeetCode
 
             #endregion
 
+            #region 225. 用队列实现栈
+
+            {
+                 MyStack obj = new MyStack();
+                 obj.Push(1);
+                 obj.Push(2);
+                 obj.Push(3);
+
+                Console.WriteLine(obj.Pop()==3);
+                Console.WriteLine(obj.Top()==2);
+                Console.WriteLine(obj.Empty()==false);
+
+                Console.WriteLine(obj.Pop()==2);
+                Console.WriteLine(obj.Pop()==1);
+                Console.WriteLine(obj.Empty()==true);
+                
+            }
+
+            #endregion
             Console.ReadKey();
         }
     }
