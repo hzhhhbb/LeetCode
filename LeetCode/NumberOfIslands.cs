@@ -11,6 +11,11 @@ namespace LeetCode
     /// </summary>
     public class NumberOfIslands
     {
+        /// <summary>
+        /// BFS
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
         public int NumIslands(char[][] grid)
         {
             if (grid == null || grid.Length == 0)
@@ -39,14 +44,14 @@ namespace LeetCode
                             if (item.Item1 >= 0 && item.Item1 < nr && item.Item2 >= 0 && item.Item2 < nc
                                 && grid[item.Item1][item.Item2] == '1')
                             {
-
                                 grid[item.Item1][item.Item2] = '0';
+
                                 //上、下节点
-                                neighbors.Enqueue(new Tuple<int, int>(item.Item1 - 1, item.Item2));
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1 + 1, item.Item2));
+                                neighbors.Enqueue(new Tuple<int, int>(item.Item1 - 1, item.Item2));
                                 //左、右节点
-                                neighbors.Enqueue(new Tuple<int, int>(item.Item1, item.Item2 - 1));
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1, item.Item2 + 1));
+                                neighbors.Enqueue(new Tuple<int, int>(item.Item1, item.Item2 - 1));
                             }
                         }
                     }
@@ -54,6 +59,58 @@ namespace LeetCode
             }
 
             return islandNum;
+        }
+
+        /// <summary>
+        /// DFS
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns></returns>
+        public int NumIslandsByDFS(char[][] grid)
+        {
+            if (grid == null || grid.Length == 0)
+            {
+                return 0;
+            }
+
+            int nr = grid.Length;
+            int nc = grid[0].Length;
+
+            int islandNum = 0;
+
+            for (int i = 0; i < nr; i++)
+            {
+                for (int j = 0; j < nc; j++)
+                {
+                    if (grid[i][j] == '1')
+                    {
+                        islandNum++;
+
+                        this.DFS(grid, i, j);
+                    }
+                }
+            }
+
+            return islandNum;
+        }
+
+        private void DFS(char[][] grid, int r, int c)
+        {
+            int nr = grid.Length;
+            int nc = grid[0].Length;
+
+            // 判断有效性
+            if (r < 0 || c < 0 || r >= nr || c >= nc || grid[r][c] == '0')
+            {
+                return;
+            }
+
+            grid[r][c] = '0';
+            DFS(grid,r-1,c);
+            DFS(grid,r+1,c);
+            DFS(grid,r,c-1);
+            DFS(grid,r,c+1);
+
         }
     }
 
@@ -95,6 +152,6 @@ namespace LeetCode
  * 陆地是1，水是0，岛屿是单独的一个1，或者是1+1+1+1（相邻的1）。那么我们可以把1+1+1+1看成是整体的1。
  * 碰到一个1，就把它相邻的1全找出来，岛屿数量+1。为了防止重复计数，需要把已访问过的陆地做一下标记，比如把陆地“吞并沉没”，即标记为0
  * ## 实现思路
- * 遍历二维数组，访问到1时，岛屿数量+1，并启动广度优先遍历，把遍历到的所有相邻的1标记为0
+ * 遍历二维数组，访问到1时，岛屿数量+1，并启动广度、深度优先遍历，把遍历到的所有相邻的1标记为0
  */
 

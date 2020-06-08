@@ -51,7 +51,23 @@ namespace LeetCode
             //                             new char[5] { '0', '0', '1', '0', '0' },
             //                             new char[5] { '0', '0', '0', '1', '1' },
             //                         };
+            //
+            //     char[][] grid2 = new char[][]
+            //                         {
+            //                             new char[5] { '1', '1', '0', '0', '0' },
+            //                             new char[5] { '1', '1', '0', '0', '0' },
+            //                             new char[5] { '0', '0', '1', '0', '0' },
+            //                             new char[5] { '0', '0', '0', '1', '1' },
+            //                         };
+            //     char[][] grid3=new char[][]
+            //                        {
+            //                            new char[3]{'1','1','1'}, 
+            //                            new char[3]{'0','1','0'}, 
+            //                            new char[3]{'1','1','1'}, 
+            //                        };
             //     Console.WriteLine(new NumberOfIslands().NumIslands(grid));
+            //     Console.WriteLine(new NumberOfIslands().NumIslandsByDFS(grid2));
+            //     Console.WriteLine(new NumberOfIslands().NumIslands(grid3));
             // }
 
             #endregion
@@ -91,24 +107,26 @@ namespace LeetCode
             #endregion
 
             #region 225. 用队列实现栈
-
-            {
-                 MyStack obj = new MyStack();
-                 obj.Push(1);
-                 obj.Push(2);
-                 obj.Push(3);
-
-                Console.WriteLine(obj.Pop()==3);
-                Console.WriteLine(obj.Top()==2);
-                Console.WriteLine(obj.Empty()==false);
-
-                Console.WriteLine(obj.Pop()==2);
-                Console.WriteLine(obj.Pop()==1);
-                Console.WriteLine(obj.Empty()==true);
-                
-            }
+            //
+            // {
+            //      MyStack obj = new MyStack();
+            //      obj.Push(1);
+            //      obj.Push(2);
+            //      obj.Push(3);
+            //
+            //     Console.WriteLine(obj.Pop()==3);
+            //     Console.WriteLine(obj.Top()==2);
+            //     Console.WriteLine(obj.Empty()==false);
+            //
+            //     Console.WriteLine(obj.Pop()==2);
+            //     Console.WriteLine(obj.Pop()==1);
+            //     Console.WriteLine(obj.Empty()==true);
+            // }
 
             #endregion
+
+
+
             Console.ReadKey();
         }
     }
