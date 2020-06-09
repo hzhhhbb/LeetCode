@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace LeetCode
 {
@@ -125,7 +126,15 @@ namespace LeetCode
 
             #endregion
 
+            #region 739. 每日温度
 
+            // {
+            //     int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
+            //     var result = new DailyTemperaturesClass().DailyTemperatures(temperatures);
+            //     Console.WriteLine(string.Join(",",result));
+            // }
+
+            #endregion
 
             Console.ReadKey();
         }
