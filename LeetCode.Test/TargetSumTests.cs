@@ -13,9 +13,8 @@ namespace LeetCode.Tests
         [Test()]
         public void FindTargetSumWaysTest()
         {
-            int[] temperatures = {73, 74, 75, 71, 69, 72, 76, 73};
-                 var result = new DailyTemperaturesClass().DailyTemperatures(temperatures);
-            Assert.AreEqual("1, 1, 4, 2, 1, 1, 0, 0",string.Join(", ",result));
+            int[] nums={1, 1, 1, 1, 1};
+            Assert.AreEqual(5,new TargetSum().FindTargetSumWays(nums,3));
         }
     }
 }

@@ -107,34 +107,6 @@ namespace LeetCode
 
             #endregion
 
-            #region 225. 用队列实现栈
-            //
-            // {
-            //      MyStack obj = new MyStack();
-            //      obj.Push(1);
-            //      obj.Push(2);
-            //      obj.Push(3);
-            //
-            //     Console.WriteLine(obj.Pop()==3);
-            //     Console.WriteLine(obj.Top()==2);
-            //     Console.WriteLine(obj.Empty()==false);
-            //
-            //     Console.WriteLine(obj.Pop()==2);
-            //     Console.WriteLine(obj.Pop()==1);
-            //     Console.WriteLine(obj.Empty()==true);
-            // }
-
-            #endregion
-
-            #region 494. 目标和
-
-            {
-                int[] nums={1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
-                Console.WriteLine($"494. 目标和结果值为：{new TargetSum().FindTargetSumWays(nums,3)}");
-            }
-
-            #endregion
-
             Console.ReadKey();
         }
     }
