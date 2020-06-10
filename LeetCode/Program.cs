@@ -136,6 +136,15 @@ namespace LeetCode
 
             #endregion
 
+            #region 494. 目标和
+
+            {
+                int[] nums={1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+                Console.WriteLine($"494. 目标和结果值为：{new TargetSum().FindTargetSumWays(nums,3)}");
+            }
+
+            #endregion
+
             Console.ReadKey();
         }
     }
