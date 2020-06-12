@@ -32,6 +32,7 @@ namespace LeetCode.Tests
                                      new int[]{0,1,0},
                                      new int[]{1,2,1},
                                  };
+
             Assert.AreEqual(output1, new Matrix().UpdateMatrix(input1));
 
         }
