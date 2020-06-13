@@ -1,11 +1,7 @@
-﻿using NUnit.Framework;
-using LeetCode;
+﻿using LeetCode.StringAndArray;
+using NUnit.Framework;
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.Tests
+namespace LeetCode.Test.StringAndArray
 {
     [TestFixture()]
     [Timeout(1000)]
