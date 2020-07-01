@@ -1,11 +1,7 @@
-﻿using NUnit.Framework;
-using LeetCode.StringAndArray;
+﻿using LeetCode.StringAndArray;
+using NUnit.Framework;
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.StringAndArray.Tests
+namespace LeetCode.Tests.StringAndArray
 {
     [TestFixture()]
     public class MinimumSizeSubarraySumTests

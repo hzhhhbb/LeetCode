@@ -1,11 +1,8 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
 using LeetCode.StringAndArray;
+using NUnit.Framework;
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.StringAndArray.Tests
+namespace LeetCode.Tests.StringAndArray
 {
     [TestFixture()]
     public class PascalsTriangleIITests

@@ -1,7 +1,7 @@
 ﻿using LeetCode.StringAndArray;
 using NUnit.Framework;
 
-namespace LeetCode.Test.StringAndArray
+namespace LeetCode.Tests.StringAndArray
 {
     [TestFixture()]
     [Timeout(1000)]
