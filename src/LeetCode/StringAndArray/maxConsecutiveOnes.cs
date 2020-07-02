@@ -10,7 +10,7 @@ namespace LeetCode.StringAndArray
     /// <summary>
     /// 485. 最大连续1的个数
     /// </summary>
-    public class maxConsecutiveOnes
+    public class MaxConsecutiveOnes
     {
         public int FindMaxConsecutiveOnes(int[] nums)
         {
