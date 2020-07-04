@@ -5,7 +5,7 @@ using System.Text;
 namespace LeetCode.LinkedList
 {
     /// <summary>
-    /// 707. 设计链表
+    /// 707. 设计链表（单链表）
     /// </summary>
     public class MyLinkedList
     {
