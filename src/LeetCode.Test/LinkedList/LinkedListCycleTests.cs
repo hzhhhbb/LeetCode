@@ -25,7 +25,6 @@ namespace LeetCode.Tests.LinkedList
         public void HasCycleTest1()
         {
             //无环
-            //有环
             ListNode head=new ListNode(1);
             ListNode node2=new ListNode(2);
             ListNode node3=new ListNode(3);
