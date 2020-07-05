@@ -16,7 +16,12 @@ namespace LeetCode.Tests.LinkedList
             ListNode node4=new ListNode(4);
             ListNode node5=new ListNode(5);
             ListNode node6=new ListNode(6);
-            head.next = node2.next = node3.next = node4.next = node5.next = node6.next=head;
+            head.next = node2;
+            node2.next = node3;
+            node3.next = node4;
+            node4.next = node5;
+            node5.next = node6;
+            node6.next = head;
 
             Assert.AreEqual(true,new LinkedListCycle().HasCycle(head));
         }
@@ -31,7 +36,11 @@ namespace LeetCode.Tests.LinkedList
             ListNode node4=new ListNode(4);
             ListNode node5=new ListNode(5);
             ListNode node6=new ListNode(6);
-            head.next = node2.next = node3.next = node4.next = node5.next = node6;
+            head.next = node2;
+            node2.next = node3;
+            node3.next = node4;
+            node4.next = node5;
+            node5.next = node6;
 
             Assert.AreEqual(false,new LinkedListCycle().HasCycle(head));
         }
