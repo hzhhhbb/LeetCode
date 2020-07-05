@@ -1,19 +1,6 @@
 ﻿using LeetCode.LinkedList;
 using NUnit.Framework;
 
-namespace LeetCode.LinkedList.Tests
-{
-    [TestFixture()]
-    public class LinkedListCycleIITests
-    {
-        [Test()]
-        public void DetectCycle1Test()
-        {
-            Assert.Fail();
-        }
-    }
-}
-
 namespace LeetCode.Tests.LinkedList
 {
     [TestFixture()]
