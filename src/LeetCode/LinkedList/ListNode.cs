@@ -11,4 +11,32 @@
             next = null;
         }
     }
+
+    public static class ListNodeExtension
+    {
+        public static bool IsEqual(this ListNode source, ListNode other)
+        {
+            var isEqual = true;
+            while (true)
+            {
+                if (source == null || other == null)
+                {
+                    isEqual = source == other;
+                    break;
+                }
+                if (source.val == other.val)
+                {
+                    source = source.next;
+                    other = other.next;
+                }
+                else
+                {
+                    isEqual = false;
+                    break;
+                }
+            }
+
+            return isEqual;
+        }
+    }
 }
