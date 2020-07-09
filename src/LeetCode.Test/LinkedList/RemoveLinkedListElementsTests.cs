@@ -1,11 +1,7 @@
-﻿using NUnit.Framework;
-using LeetCode.LinkedList;
+﻿using LeetCode.LinkedList;
+using NUnit.Framework;
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.LinkedList.Tests
+namespace LeetCode.Tests.LinkedList
 {
     [TestFixture()]
     public class RemoveLinkedListElementsTests
