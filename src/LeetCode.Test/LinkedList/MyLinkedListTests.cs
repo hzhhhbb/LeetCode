@@ -78,19 +78,5 @@ namespace LeetCode.Tests.LinkedList
             linkedList.AddAtHead(6);
         }
 
-        [Test()]
-        public void MyLinkedList2Test2()
-        {
-            MyLinkedList2 linkedList = new MyLinkedList2();
-            linkedList.AddAtHead(1);
-            linkedList.DeleteAtIndex(0);
-
-            var expected = 4;
-            Assert.AreEqual(expected, linkedList.Get(4));
-
-            linkedList.AddAtHead(4);
-            linkedList.AddAtIndex(5, 0);
-            linkedList.AddAtHead(6);
-        }
     }
 }
