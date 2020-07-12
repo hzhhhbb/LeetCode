@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace LeetCode
 {
     using System.Linq;
-    using System.Runtime.CompilerServices;
 
     /// <summary>
     /// 752.打开转盘锁

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.StringAndArray
+﻿namespace LeetCode.StringAndArray
 {
     /// <summary>
     /// 26.删除排序数组中的重复项

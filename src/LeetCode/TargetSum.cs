@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     /// <summary>
     /// 494. 目标和

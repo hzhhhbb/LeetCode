@@ -1,5 +1,4 @@
-﻿using System;
-using LeetCode.LinkedList;
+﻿using LeetCode.LinkedList;
 using NUnit.Framework;
 
 namespace LeetCode.Tests.LinkedList

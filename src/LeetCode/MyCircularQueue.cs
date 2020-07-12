@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode
+﻿namespace LeetCode
 {
     /// <summary>
     ///  622. 设计循环队列

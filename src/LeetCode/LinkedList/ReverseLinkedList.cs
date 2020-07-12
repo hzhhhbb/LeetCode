@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.LinkedList
+﻿namespace LeetCode.LinkedList
 {
     /// <summary>
     /// 206. 反转链表

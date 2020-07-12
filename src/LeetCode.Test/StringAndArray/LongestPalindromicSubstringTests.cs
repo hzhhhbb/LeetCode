@@ -1,5 +1,4 @@
 ﻿using LeetCode.StringAndArray;
-using NuGet.Frameworks;
 using NUnit.Framework;
 
 namespace LeetCode.Tests.StringAndArray

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.StringAndArray
+﻿namespace LeetCode.StringAndArray
 {
     /// <summary>
     /// 167. 两数之和 II - 输入有序数组

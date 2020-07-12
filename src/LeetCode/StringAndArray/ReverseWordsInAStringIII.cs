@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.StringAndArray
+﻿namespace LeetCode.StringAndArray
 {
     using System.Linq;
 

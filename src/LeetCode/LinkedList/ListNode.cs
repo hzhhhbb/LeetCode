@@ -10,6 +10,12 @@
             val = x;
             next = null;
         }
+
+        public ListNode(int val = 0, ListNode next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
     }
 
     public static class ListNodeExtension
@@ -24,6 +30,7 @@
                     isEqual = source == other;
                     break;
                 }
+
                 if (source.val == other.val)
                 {
                     source = source.next;

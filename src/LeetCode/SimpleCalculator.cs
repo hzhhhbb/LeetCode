@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace LeetCode
 {
-    using System.Collections;
-    using System.Linq;
-    using System.Net.Http.Headers;
-
     /// <summary>
     /// 224. 基本计算器
     /// </summary>

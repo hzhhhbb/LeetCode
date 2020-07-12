@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.LinkedList
+﻿namespace LeetCode.LinkedList
 {
     /// <summary>
     /// 707. 设计链表（单链表）
