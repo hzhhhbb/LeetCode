@@ -1,6 +1,7 @@
-﻿using NUnit.Framework;
+﻿using LeetCode.LinkedList;
+using NUnit.Framework;
 
-namespace LeetCode.LinkedList.Tests
+namespace LeetCode.Tests.LinkedList
 {
     [TestFixture()]
     public class MergeTwoSortedListsTests
