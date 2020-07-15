@@ -63,6 +63,7 @@ namespace LeetCode.LinkedList
 
         public Node child;
 
+        public Node random;
         public Node(int value)
         {
             this.val = value;
