@@ -5,7 +5,7 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 136. 只出现一次的数字
     /// </summary>
-   public class SingleNumberClass
+    public class SingleNumberClass
     {
         public int SingleNumber(int[] nums)
         {
@@ -13,19 +13,20 @@ namespace LeetCode.HashTable
             int leftIndex = 0;
             int rightIndex = 1;
 
-            while (leftIndex<nums.Length-1&&rightIndex<nums.Length-1)
+            while (leftIndex < nums.Length - 1 && rightIndex < nums.Length - 1)
             {
                 if (nums[leftIndex] != nums[rightIndex])
                 {
                     return nums[leftIndex];
                 }
 
-                leftIndex+=2;
-                rightIndex+=2;
+                leftIndex += 2;
+                rightIndex += 2;
             }
 
             return nums[leftIndex];
         }
+
         public int SingleNumber1(int[] nums)
         {
             int result = 0;
