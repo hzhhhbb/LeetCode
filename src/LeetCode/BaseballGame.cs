@@ -17,7 +17,7 @@ namespace LeetCode
                 {
                     stack.Push(result);
                 }
-                else if(s.Equals("+"))
+                else if (s.Equals("+"))
                 {
                     int top = stack.Pop();
                     int newTop = top + stack.Peek();

@@ -3,7 +3,7 @@
     /// <summary>
     /// 21. 合并两个有序链表
     /// </summary>
-   public class MergeTwoSortedLists
+    public class MergeTwoSortedLists
     {
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
@@ -18,7 +18,7 @@
             }
 
             ListNode newHead = new ListNode(0);
-       
+
             ListNode currentNode = null;
             if (l1.val <= l2.val)
             {
@@ -30,9 +30,10 @@
                 currentNode = l2;
                 l2 = l2.next;
             }
+
             newHead.next = currentNode;
-          
-            while (l1!=null||l2!=null)
+
+            while (l1 != null || l2 != null)
             {
                 if (l2 == null)
                 {

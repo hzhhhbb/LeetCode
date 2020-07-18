@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace LeetCode.LinkedList
 {
@@ -15,13 +13,14 @@ namespace LeetCode.LinkedList
             {
                 return head;
             }
-            Node tempHead=new Node(-1);
-            Node currentNode=new Node(-2);
+
+            Node tempHead = new Node(-1);
+            Node currentNode = new Node(-2);
             tempHead.next = currentNode;
 
-            Dictionary<Node,Node> kv=new Dictionary<Node, Node>();
+            Dictionary<Node, Node> kv = new Dictionary<Node, Node>();
 
-            while (head!=null)
+            while (head != null)
             {
                 if (kv.ContainsKey(head))
                 {
@@ -29,7 +28,7 @@ namespace LeetCode.LinkedList
                 }
                 else
                 {
-                    currentNode.next=new Node(head.val);
+                    currentNode.next = new Node(head.val);
                     kv.TryAdd(head, currentNode.next);
                 }
 
@@ -41,7 +40,7 @@ namespace LeetCode.LinkedList
                     }
                     else
                     {
-                        currentNode.next.random=new Node(head.random.val);
+                        currentNode.next.random = new Node(head.random.val);
                         kv.TryAdd(head.random, currentNode.next.random);
                     }
                 }

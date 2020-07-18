@@ -12,6 +12,7 @@ namespace LeetCode
         private Queue<int> Queue;
 
         private int Size;
+
         /** Initialize your data structure here. */
         public MovingAverage(int size)
         {
@@ -25,6 +26,7 @@ namespace LeetCode
             {
                 this.Queue.Dequeue();
             }
+
             this.Queue.Enqueue(val);
             return this.Queue.Average();
         }

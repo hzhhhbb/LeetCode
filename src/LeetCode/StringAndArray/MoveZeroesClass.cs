@@ -18,7 +18,7 @@
                         nums[fast] = nums[fast] ^ nums[slowIndex];
                         nums[slowIndex] = nums[fast] ^ nums[slowIndex];
                     }
-                   
+
                     slowIndex++;
                 }
             }

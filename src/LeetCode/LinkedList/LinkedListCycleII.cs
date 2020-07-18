@@ -13,10 +13,10 @@ namespace LeetCode.LinkedList
             {
                 return null;
             }
-            
-            HashSet<ListNode> visited=new HashSet<ListNode>();
+
+            HashSet<ListNode> visited = new HashSet<ListNode>();
             ListNode node = head;
-            while (node!=null)
+            while (node != null)
             {
                 if (visited.Contains(node))
                 {
@@ -39,7 +39,7 @@ namespace LeetCode.LinkedList
 
             ListNode slowNode = head;
             ListNode fastNode = head;
-            while (fastNode?.next!=null)
+            while (fastNode?.next != null)
             {
                 slowNode = slowNode.next;
                 fastNode = fastNode.next.next;
@@ -53,9 +53,9 @@ namespace LeetCode.LinkedList
             {
                 return null;
             }
-            
+
             ListNode headNode = head;
-            while (headNode!=slowNode)
+            while (headNode != slowNode)
             {
                 headNode = headNode.next;
                 slowNode = slowNode.next;

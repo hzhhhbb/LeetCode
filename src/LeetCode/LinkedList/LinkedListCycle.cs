@@ -9,9 +9,9 @@ namespace LeetCode.LinkedList
     {
         public bool HasCycle(ListNode head)
         {
-            HashSet<ListNode> readNodes=new HashSet<ListNode>();
+            HashSet<ListNode> readNodes = new HashSet<ListNode>();
 
-            while (head!=null)
+            while (head != null)
             {
                 if (readNodes.Contains(head))
                 {

@@ -9,7 +9,7 @@
     {
         public string ReverseWords(string s)
         {
-            return string.Join(" ", s.Split(" ").Select(u=>string.Join("",u.Reverse())));
+            return string.Join(" ", s.Split(" ").Select(u => string.Join("", u.Reverse())));
         }
     }
 }

@@ -8,7 +8,7 @@ namespace LeetCode.StringAndArray
     /// </summary>
     public class LongestCommonPrefixClass
     {
-        public string LongestCommonPrefix(string[] strs) 
+        public string LongestCommonPrefix(string[] strs)
         {
             if (!strs.Any())
             {
@@ -20,18 +20,19 @@ namespace LeetCode.StringAndArray
                 return strs[0];
             }
 
-            List<char> chars=new List<char>();
-            
+            List<char> chars = new List<char>();
+
             for (int columnIndex = 0; columnIndex < strs[0].Length; columnIndex++)
             {
                 char tempStr = strs[0][columnIndex];
                 for (int rowIndex = 1; rowIndex < strs.Length; rowIndex++)
                 {
-                    if (strs[rowIndex].Length-1 < columnIndex)
+                    if (strs[rowIndex].Length - 1 < columnIndex)
                     {
                         return string.Join("", chars);
                     }
-                    if(!tempStr.Equals(strs[rowIndex][columnIndex]))
+
+                    if (!tempStr.Equals(strs[rowIndex][columnIndex]))
                     {
                         return string.Join("", chars);
                     }

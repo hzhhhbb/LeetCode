@@ -3,7 +3,7 @@
     /// <summary>
     /// 328. 奇偶链表
     /// </summary>
-   public class OddEvenLinkedList
+    public class OddEvenLinkedList
     {
         public ListNode OddEvenList(ListNode head)
         {
@@ -11,6 +11,7 @@
             {
                 return head;
             }
+
             ListNode currentNode = head;
             ListNode oddNodeHead = null;
             ListNode evenNodeHead = null;
@@ -18,7 +19,7 @@
             ListNode currentEvenNode = null;
             int number = 1;
 
-            while (currentNode!=null)
+            while (currentNode != null)
             {
                 if (number % 2 == 1)
                 {
@@ -50,7 +51,7 @@
                 currentNode = currentNode.next;
                 number++;
             }
-           
+
             currentOddNode.next = evenNodeHead;
             currentEvenNode.next = null;
             return oddNodeHead;

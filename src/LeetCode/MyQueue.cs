@@ -7,15 +7,15 @@ namespace LeetCode
     /// </summary>
     public class MyQueue
     {
-       private Stack<int> Queue;
+        private Stack<int> Queue;
 
-       private Stack<int> tempStack;
+        private Stack<int> tempStack;
 
         /** Initialize your data structure here. */
         public MyQueue()
         {
-            this.Queue=new Stack<int>();
-            this.tempStack=new Stack<int>();
+            this.Queue = new Stack<int>();
+            this.tempStack = new Stack<int>();
         }
 
         /** Push element x to the back of Queue. */
@@ -27,11 +27,11 @@ namespace LeetCode
             }
             else
             {
-
                 while (this.Queue.Count != 0)
                 {
-                   this.tempStack.Push(this.Queue.Pop());
+                    this.tempStack.Push(this.Queue.Pop());
                 }
+
                 this.tempStack.Push(x);
 
                 while (this.tempStack.Count != 0)

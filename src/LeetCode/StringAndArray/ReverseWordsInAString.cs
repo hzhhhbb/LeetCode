@@ -5,11 +5,11 @@ namespace LeetCode.StringAndArray
     /// <summary>
     /// 151. 翻转字符串里的单词
     /// </summary>
-   public class ReverseWordsInAString
+    public class ReverseWordsInAString
     {
-        public string ReverseWords(string s) 
+        public string ReverseWords(string s)
         {
-            return string.Join(" ", s.Split(" ").Reverse().Where(u=>!string.IsNullOrWhiteSpace(u)));
+            return string.Join(" ", s.Split(" ").Reverse().Where(u => !string.IsNullOrWhiteSpace(u)));
         }
     }
 }

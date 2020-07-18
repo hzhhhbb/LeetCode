@@ -3,7 +3,7 @@
     /// <summary>
     /// 27. 移除元素
     /// </summary>
-   public class RemoveElementClass
+    public class RemoveElementClass
     {
         public int RemoveElement(int[] nums, int val)
         {

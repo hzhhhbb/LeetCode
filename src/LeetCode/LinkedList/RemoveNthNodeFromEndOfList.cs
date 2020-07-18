@@ -15,17 +15,17 @@ namespace LeetCode.LinkedList
                 return null;
             }
 
-            Dictionary<int,ListNode> kv=new Dictionary<int, ListNode>();
+            Dictionary<int, ListNode> kv = new Dictionary<int, ListNode>();
             ListNode tempHead = head;
             int linkedListLength = 0;
-            while (tempHead!=null)
+            while (tempHead != null)
             {
-                kv.Add(linkedListLength,tempHead);
+                kv.Add(linkedListLength, tempHead);
                 tempHead = tempHead.next;
                 linkedListLength++;
             }
 
-            int nthIndex = linkedListLength -n;
+            int nthIndex = linkedListLength - n;
 
             if (nthIndex == 0)
             {

@@ -5,9 +5,9 @@ namespace LeetCode.StringAndArray
     /// <summary>
     /// 118. 杨辉三角
     /// </summary>
-   public class PascalsTriangle
+    public class PascalsTriangle
     {
-        public IList<IList<int>> Generate(int numRows) 
+        public IList<IList<int>> Generate(int numRows)
         {
             IList<IList<int>> pascalsTriangle = new List<IList<int>>();
             if (numRows == 0)
@@ -17,7 +17,7 @@ namespace LeetCode.StringAndArray
 
             for (int i = 0; i < numRows; i++)
             {
-                var tempItem=new List<int>(i+1);
+                var tempItem = new List<int>(i + 1);
                 for (int j = 0; j < i + 1; j++)
                 {
                     if (j == 0 || j == i)
@@ -29,6 +29,7 @@ namespace LeetCode.StringAndArray
                         tempItem.Add(pascalsTriangle[i - 1][j - 1] + pascalsTriangle[i - 1][j]);
                     }
                 }
+
                 pascalsTriangle.Add(tempItem);
             }
 

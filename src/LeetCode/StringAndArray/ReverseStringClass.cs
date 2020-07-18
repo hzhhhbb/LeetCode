@@ -3,7 +3,7 @@
     /// <summary>
     /// 344. 反转字符串
     /// </summary>
-   public class ReverseStringClass
+    public class ReverseStringClass
     {
         public void ReverseString(char[] s)
         {
@@ -17,9 +17,9 @@
 
             while (start < end)
             {
-                s[start] = (char)(s[start] ^ s[end]);
-                s[end] = (char)(s[start] ^ s[end]);
-                s[start] = (char)(s[start] ^ s[end]);
+                s[start] = (char) (s[start] ^ s[end]);
+                s[end] = (char) (s[start] ^ s[end]);
+                s[start] = (char) (s[start] ^ s[end]);
 
                 start++;
                 end--;

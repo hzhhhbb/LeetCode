@@ -3,10 +3,10 @@
     /// <summary>
     /// 206. 反转链表
     /// </summary>
-   public class ReverseLinkedList
+    public class ReverseLinkedList
     {
         //迭代
-        public ListNode ReverseList(ListNode head) 
+        public ListNode ReverseList(ListNode head)
         {
             if (head == null || head.next == null)
             {
@@ -16,7 +16,7 @@
             var currentNode = head;
             ListNode prevNode = null;
 
-            while (currentNode!=null)
+            while (currentNode != null)
             {
                 ListNode nextNode = currentNode.next;
                 currentNode.next = prevNode;
@@ -29,7 +29,7 @@
         }
 
         //递归 //todo
-        public ListNode ReverseList1(ListNode head) 
+        public ListNode ReverseList1(ListNode head)
         {
             if (head == null || head.next == null)
             {

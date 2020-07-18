@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace LeetCode.LinkedList
+﻿namespace LeetCode.LinkedList
 {
     /// <summary>
     /// 430. 扁平化多级双向链表
@@ -16,7 +12,7 @@ namespace LeetCode.LinkedList
                 return head;
             }
 
-            Node tempHead0=new Node(-1);
+            Node tempHead0 = new Node(-1);
             Node tempHead = new Node(-1);
             tempHead0.next = tempHead;
             tempHead.next = head;
@@ -40,7 +36,7 @@ namespace LeetCode.LinkedList
                     Node tempChild = child.child;
                     child.child = null;
 
-                    currentNode= this.Flatten(currentNode, tempChild);
+                    currentNode = this.Flatten(currentNode, tempChild);
                     child = tempNext;
                 }
                 else
@@ -64,6 +60,7 @@ namespace LeetCode.LinkedList
         public Node child;
 
         public Node random;
+
         public Node(int value)
         {
             this.val = value;

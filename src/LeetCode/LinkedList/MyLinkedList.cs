@@ -113,7 +113,7 @@
             {
                 return;
             }
-            
+
             var node = sentinelHead;
             for (int i = 0; i < index; i++)
             {
@@ -176,7 +176,7 @@
         {
             ListNode node = new ListNode(val);
 
-            if (this.Size==0)
+            if (this.Size == 0)
             {
                 this.sentinelHead.Next = node;
                 node.Prev = this.sentinelHead;
@@ -236,7 +236,7 @@
             ListNode newNode = new ListNode(val);
 
             var currentNode = this.sentinelHead;
-            for (int i = 0; i < index+1; i++)
+            for (int i = 0; i < index + 1; i++)
             {
                 currentNode = currentNode.Next;
             }
@@ -258,7 +258,7 @@
             }
 
             var currentNode = sentinelHead;
-            for (int i = 0; i < index+1; i++)
+            for (int i = 0; i < index + 1; i++)
             {
                 currentNode = currentNode.Next;
             }

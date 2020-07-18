@@ -8,15 +8,15 @@ namespace LeetCode.StringAndArray
     /// </summary>
     public class ZeroMatrixLCCI
     {
-        public void SetZeroes(int[][] matrix) 
+        public void SetZeroes(int[][] matrix)
         {
             if (!matrix.Any())
             {
                 return;
             }
 
-            HashSet<int> rowNumbers=new HashSet<int>(matrix.Length);
-            HashSet<int> columnNumbers=new HashSet<int>(matrix[0].Length);
+            HashSet<int> rowNumbers = new HashSet<int>(matrix.Length);
+            HashSet<int> columnNumbers = new HashSet<int>(matrix[0].Length);
 
             for (int i = 0; i < matrix.Length; i++)
             {
@@ -45,7 +45,6 @@ namespace LeetCode.StringAndArray
                     matrix[rowNumber][i] = 0;
                 }
             }
-
         }
     }
 }

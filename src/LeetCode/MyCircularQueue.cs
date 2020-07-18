@@ -12,6 +12,7 @@
         private int tail = -1;
 
         private int count = 0;
+
         /** Initialize your data structure here. Set the size of the queue to be k. */
         public MyCircularQueue(int k)
         {

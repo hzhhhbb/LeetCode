@@ -15,10 +15,10 @@ namespace LeetCode
             int rowLength = matrix.Length;
             int columnLength = matrix[0].Length;
 
-            Queue<Tuple<int,int>> queue=new Queue<Tuple<int, int>>();
-            Dictionary<string,int> readNode=new Dictionary<string, int>();
+            Queue<Tuple<int, int>> queue = new Queue<Tuple<int, int>>();
+            Dictionary<string, int> readNode = new Dictionary<string, int>();
 
-            var result = (int[][])matrix.Clone();
+            var result = (int[][]) matrix.Clone();
 
             for (int i = 0; i < rowLength; i++)
             {
@@ -29,7 +29,7 @@ namespace LeetCode
                         continue;
                     }
 
-                    queue.Enqueue(new Tuple<int, int>(i,j));
+                    queue.Enqueue(new Tuple<int, int>(i, j));
                     while (queue.Any())
                     {
                         var tempNode = queue.Dequeue();

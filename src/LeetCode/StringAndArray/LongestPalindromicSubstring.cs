@@ -22,14 +22,14 @@ namespace LeetCode.StringAndArray
                 int len1 = this.ExpandAroundCenter(s, i, i);
                 int len2 = this.ExpandAroundCenter(s, i, i + 1);
                 int len = Math.Max(len1, len2);
-                if (len > endIndex - startIndex) 
+                if (len > endIndex - startIndex)
                 {
                     startIndex = i - (len - 1) / 2;
                     endIndex = i + len / 2;
                 }
             }
 
-            return s.Substring(startIndex, endIndex-startIndex+1);
+            return s.Substring(startIndex, endIndex - startIndex + 1);
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace LeetCode.StringAndArray
         {
             int leftIndex = left;
             int rightIndex = right;
-            while (leftIndex >= 0 && rightIndex <s.Length && s[leftIndex]==s[rightIndex])
+            while (leftIndex >= 0 && rightIndex < s.Length && s[leftIndex] == s[rightIndex])
             {
                 leftIndex--;
                 rightIndex++;

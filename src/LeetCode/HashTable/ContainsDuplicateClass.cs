@@ -5,7 +5,7 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 217. 存在重复元素
     /// </summary>
-   public class ContainsDuplicateClass
+    public class ContainsDuplicateClass
     {
         public bool ContainsDuplicate(int[] nums)
         {
@@ -14,7 +14,7 @@ namespace LeetCode.HashTable
                 return false;
             }
 
-            HashSet<int> set=new HashSet<int>(nums.Length);
+            HashSet<int> set = new HashSet<int>(nums.Length);
             foreach (int num in nums)
             {
                 if (set.Contains(num))

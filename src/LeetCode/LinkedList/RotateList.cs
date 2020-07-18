@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.LinkedList
+﻿namespace LeetCode.LinkedList
 {
     /// <summary>
     /// 61. 旋转链表
@@ -40,7 +36,6 @@ namespace LeetCode.LinkedList
             newTail.next = null;
 
             return newHead;
-
         }
     }
 }

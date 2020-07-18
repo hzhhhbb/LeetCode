@@ -6,10 +6,10 @@ namespace LeetCode
     /// <summary>
     /// 最小栈，题目155
     /// </summary>
-   public class MinStack
+    public class MinStack
     {
         private List<int> Items;
-        
+
         private int itemCount;
 
         public MinStack()

@@ -15,7 +15,7 @@ namespace LeetCode
             int sign = 1, res = 0;
             int length = s.Length;
             for (int i = 0; i < length; i++)
-            { 
+            {
                 char ch = s[i];
                 if (char.IsDigit(ch))
                 {

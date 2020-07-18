@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.LinkedList
 {
-   public class RemoveLinkedListElements
+    public class RemoveLinkedListElements
     {
-        public ListNode RemoveElements(ListNode head, int val) 
+        public ListNode RemoveElements(ListNode head, int val)
         {
             if (head == null)
             {
@@ -13,7 +13,7 @@
             tempHead.next = head;
 
             ListNode currentNode = tempHead;
-            while (currentNode.next!=null&&currentNode!=null)
+            while (currentNode.next != null && currentNode != null)
             {
                 if (currentNode.next.val == val)
                 {
@@ -23,7 +23,6 @@
                 {
                     currentNode = currentNode.next;
                 }
-                
             }
 
             return tempHead.next;

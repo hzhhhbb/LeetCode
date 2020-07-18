@@ -1,5 +1,4 @@
-﻿using System.Linq.Expressions;
-using LeetCode.HashTable;
+﻿using LeetCode.HashTable;
 using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable

@@ -3,9 +3,9 @@
     /// <summary>
     /// 28. 实现 strStr()
     /// </summary>
-   public class ImplementStrstr
+    public class ImplementStrstr
     {
-        public int StrStr(string haystack, string needle) 
+        public int StrStr(string haystack, string needle)
         {
             if (string.IsNullOrEmpty(needle))
             {
@@ -22,10 +22,10 @@
             {
                 if (haystack[i] == needle[0])
                 {
-                    int startIndex = i+1;
+                    int startIndex = i + 1;
                     int needleIndex = 1;
 
-                    while (startIndex<haystack.Length&&needleIndex<needle.Length)
+                    while (startIndex < haystack.Length && needleIndex < needle.Length)
                     {
                         if (haystack[startIndex] == needle[needleIndex])
                         {
@@ -38,9 +38,9 @@
                         }
                     }
 
-                    if (needleIndex==needle.Length)
+                    if (needleIndex == needle.Length)
                     {
-                        result=i;
+                        result = i;
                         break;
                     }
                 }

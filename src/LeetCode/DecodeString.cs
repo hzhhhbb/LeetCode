@@ -12,21 +12,21 @@ namespace LeetCode
     {
         public string DecodeString(string s)
         {
-            Stack<char> stack=new Stack<char>();
+            Stack<char> stack = new Stack<char>();
 
             for (int i = 0; i < s.Length; i++)
             {
                 if (s[i].Equals(']'))
                 {
                     string tempStr = string.Empty;
-                    while (stack.Peek()!='[')
+                    while (stack.Peek() != '[')
                     {
                         tempStr = stack.Pop() + tempStr;
                     }
 
                     stack.Pop();
                     string numberStr = string.Empty;
-                    while (stack.Any()&&char.IsDigit(stack.Peek()))
+                    while (stack.Any() && char.IsDigit(stack.Peek()))
                     {
                         numberStr = stack.Pop() + numberStr;
                     }
@@ -50,7 +50,7 @@ namespace LeetCode
                 }
             }
 
-            StringBuilder result=new StringBuilder();
+            StringBuilder result = new StringBuilder();
             while (stack.Any())
             {
                 result.Append(stack.Pop());

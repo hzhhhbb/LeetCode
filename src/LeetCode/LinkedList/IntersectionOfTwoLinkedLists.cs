@@ -5,9 +5,9 @@ namespace LeetCode.LinkedList
     /// <summary>
     /// 160. 相交链表
     /// </summary>
-   public class IntersectionOfTwoLinkedLists
+    public class IntersectionOfTwoLinkedLists
     {
-       //哈希表法
+        //哈希表法
         public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
         {
             if (headA == null || headB == null)
@@ -15,16 +15,16 @@ namespace LeetCode.LinkedList
                 return null;
             }
 
-            HashSet<ListNode> a=new HashSet<ListNode>();
+            HashSet<ListNode> a = new HashSet<ListNode>();
             ListNode headANode = headA;
-            while (headANode!=null)
+            while (headANode != null)
             {
                 a.Add(headANode);
                 headANode = headANode.next;
             }
 
             ListNode headBNode = headB;
-            while (headBNode!=null)
+            while (headBNode != null)
             {
                 if (a.Contains(headBNode))
                 {
@@ -49,7 +49,7 @@ namespace LeetCode.LinkedList
             ListNode tempHeadB = headB;
             bool aVisitedB = false;
             bool bVisitedA = false;
-            while (tempHeadA!=tempHeadB)
+            while (tempHeadA != tempHeadB)
             {
                 if (tempHeadA == null)
                 {
@@ -81,7 +81,6 @@ namespace LeetCode.LinkedList
                 {
                     break;
                 }
-
             }
 
             return tempHeadA == tempHeadB ? tempHeadA : null;

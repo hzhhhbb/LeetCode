@@ -6,7 +6,7 @@ namespace LeetCode.StringAndArray
     /// <summary>
     /// 561. 数组拆分 I
     /// </summary>
-   public class ArrayPartitionI
+    public class ArrayPartitionI
     {
         public int ArrayPairSum(int[] nums)
         {
@@ -21,7 +21,7 @@ namespace LeetCode.StringAndArray
             int end = nums.Length - 2;
             int result = 0;
 
-            while (start<end)
+            while (start < end)
             {
                 result = result + nums[start] + nums[end];
 
@@ -33,7 +33,7 @@ namespace LeetCode.StringAndArray
             {
                 result += nums[start];
             }
-            
+
             return result;
         }
 
@@ -41,7 +41,7 @@ namespace LeetCode.StringAndArray
         {
             nums = nums.OrderBy(u => u).ToArray();
             int sum = 0;
-            for (int i = 0; i < nums.Length; i+=2)
+            for (int i = 0; i < nums.Length; i += 2)
             {
                 sum += nums[i];
             }

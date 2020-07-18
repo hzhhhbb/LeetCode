@@ -5,7 +5,7 @@ namespace LeetCode.StringAndArray
     /// <summary>
     /// 209. 长度最小的子数组
     /// </summary>
-   public class MinimumSizeSubarraySum
+    public class MinimumSizeSubarraySum
     {
         public int MinSubArrayLen(int s, int[] nums)
         {
@@ -38,10 +38,10 @@ namespace LeetCode.StringAndArray
             int end = 0;
             int minimumSize = int.MaxValue;
             int sum = 0;
-            while (end<nums.Length)
+            while (end < nums.Length)
             {
                 sum += nums[end];
-                while (sum>=s)
+                while (sum >= s)
                 {
                     minimumSize = Math.Min(minimumSize, end - start + 1);
                     sum = sum - nums[start];
