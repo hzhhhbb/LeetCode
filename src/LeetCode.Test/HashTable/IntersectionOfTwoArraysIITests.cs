@@ -1,8 +1,5 @@
 ﻿using NUnit.Framework;
 using LeetCode.HashTable;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LeetCode.Tests.HashTable
 {

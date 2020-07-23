@@ -1,6 +1,5 @@
 ﻿namespace LeetCode.HashTable
 {
-    using System;
     using System.Collections.Generic;
 
     /// <summary>
