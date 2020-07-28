@@ -29,5 +29,11 @@ namespace LeetCode.HashTable
 
             return numberAndCount.OrderByDescending(u=>u.Value).Select(u=>u.Key).Take(k).ToArray();
         }
+
+        public int[] TopKFrequent1(int[] nums, int k)
+        {
+            return nums.GroupBy(u=>u).ToDictionary(key=>key.Key,value=>value.Count()).OrderByDescending(u=>u.Value).Select(u=>u.Key).Take(k).ToArray();
+        }
+        
     }
 }
