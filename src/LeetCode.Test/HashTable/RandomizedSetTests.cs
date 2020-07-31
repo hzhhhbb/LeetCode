@@ -16,7 +16,8 @@ namespace LeetCode.Tests.HashTable
             Assert.IsFalse(set.Insert(3));
             Assert.IsFalse(set.Remove(4));
             Assert.IsTrue(set.Remove(3));
-            Assert.IsTrue(set.GetRandom()==1||set.GetRandom()==2);
+            var result = set.GetRandom();
+            Assert.IsTrue(result==1||result==2);
 
         }
 
