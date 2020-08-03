@@ -57,7 +57,7 @@ namespace LeetCode
         private bool IsFullSquareNumber(int number)
         {
             double root = Math.Sqrt(number);
-            if (((int) root).ToString() == root.ToString())
+            if (((int)root).ToString() == root.ToString())
             {
                 return true;
             }

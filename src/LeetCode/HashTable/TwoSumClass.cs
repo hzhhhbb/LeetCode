@@ -15,7 +15,7 @@ namespace LeetCode.HashTable
                 int num = nums[index];
                 if (kv.ContainsKey(target - num))
                 {
-                    return new int[] {kv[target - num], index};
+                    return new int[] { kv[target - num], index };
                 }
 
                 kv.TryAdd(num, index);

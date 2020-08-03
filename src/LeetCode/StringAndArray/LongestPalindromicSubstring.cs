@@ -11,7 +11,7 @@ namespace LeetCode.StringAndArray
         {
             if (string.IsNullOrWhiteSpace(s) || s.Length < 1)
             {
-                return "";
+                return string.Empty;
             }
 
             int startIndex = 0;
@@ -49,8 +49,8 @@ namespace LeetCode.StringAndArray
                 rightIndex++;
             }
 
-            //跳出循环时，刚好满足s[leftIndex]!=s[rightIndex],
-            //回文串的长度为rightIndex - leftIndex + 1 -2= j - i - 1
+            // 跳出循环时，刚好满足s[leftIndex]!=s[rightIndex],
+            // 回文串的长度为rightIndex - leftIndex + 1 -2= j - i - 1
             // babad b为中心开始扩展，跳出循环时，左右下标分别为0、4，回文串aba长度为4 - 0 - 1
             return rightIndex - leftIndex - 1;
         }

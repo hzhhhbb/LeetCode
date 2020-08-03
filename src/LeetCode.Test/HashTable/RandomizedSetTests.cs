@@ -1,5 +1,6 @@
-﻿using NUnit.Framework;
-using LeetCode.HashTable;
+﻿using LeetCode.HashTable;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
 {
@@ -9,7 +10,7 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void RandomizedSetTest()
         {
-            RandomizedSet set=new RandomizedSet();
+            RandomizedSet set = new RandomizedSet();
             Assert.IsTrue(set.Insert(1));
             Assert.IsTrue(set.Insert(2));
             Assert.IsTrue(set.Insert(3));
@@ -17,19 +18,18 @@ namespace LeetCode.Tests.HashTable
             Assert.IsFalse(set.Remove(4));
             Assert.IsTrue(set.Remove(3));
             var result = set.GetRandom();
-            Assert.IsTrue(result==1||result==2);
-
+            Assert.IsTrue(result == 1 || result == 2);
         }
 
         [Test()]
         public void RandomizedSetTest1()
         {
-            RandomizedSet set=new RandomizedSet();
+            RandomizedSet set = new RandomizedSet();
             Assert.IsTrue(set.Insert(3));
             Assert.IsTrue(set.Remove(3));
             Assert.IsFalse(set.Remove(0));
             Assert.IsTrue(set.Insert(3));
-            Assert.IsTrue(set.GetRandom()==3);
+            Assert.IsTrue(set.GetRandom() == 3);
             Assert.IsFalse(set.Remove(0));
         }
     }

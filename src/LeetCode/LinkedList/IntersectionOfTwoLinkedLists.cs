@@ -7,7 +7,7 @@ namespace LeetCode.LinkedList
     /// </summary>
     public class IntersectionOfTwoLinkedLists
     {
-        //哈希表法
+        // 哈希表法
         public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
         {
             if (headA == null || headB == null)

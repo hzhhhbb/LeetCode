@@ -8,6 +8,7 @@
         class ListNode
         {
             public int Value;
+
             public ListNode Next = null;
 
             public ListNode(int value)
@@ -17,6 +18,7 @@
         }
 
         public int Size;
+
         private ListNode sentinelHead;
 
         /** Initialize your data structure here. */
@@ -145,6 +147,7 @@
         }
 
         public int Size;
+
         private ListNode sentinelHead;
 
         /** Initialize your data structure here. */
@@ -272,7 +275,6 @@
             this.Size--;
         }
     }
-
 
     /*
      * Your MyLinkedList object will be instantiated and called as such:

@@ -1,4 +1,5 @@
 ﻿using LeetCode.StringAndArray;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.StringAndArray
@@ -10,56 +11,55 @@ namespace LeetCode.Tests.StringAndArray
         public void ReverseWordsTest()
         {
             string originStr = "the sky is blue";
-            string expected="blue is sky the";
+            string expected = "blue is sky the";
 
-            string reversedStr =new ReverseWordsInAString().ReverseWords(originStr);
+            string reversedStr = new ReverseWordsInAString().ReverseWords(originStr);
 
-            Assert.AreEqual(expected,reversedStr);
+            Assert.AreEqual(expected, reversedStr);
         }
 
         [Test()]
         public void ReverseWordsTest1()
         {
-            string originStr =  "  hello   world!  ";
+            string originStr = "  hello   world!  ";
             string expected = "world! hello";
 
-            string reversedStr =new ReverseWordsInAString().ReverseWords(originStr);
+            string reversedStr = new ReverseWordsInAString().ReverseWords(originStr);
 
-            Assert.AreEqual(expected,reversedStr);
+            Assert.AreEqual(expected, reversedStr);
         }
 
         [Test()]
         public void ReverseWordsTest3()
         {
-            string originStr =  " ";
-            string expected = "";
+            string originStr = " ";
+            string expected = string.Empty;
 
-            string reversedStr =new ReverseWordsInAString().ReverseWords(originStr);
+            string reversedStr = new ReverseWordsInAString().ReverseWords(originStr);
 
-            Assert.AreEqual(expected,reversedStr);
+            Assert.AreEqual(expected, reversedStr);
         }
 
         [Test()]
         public void ReverseWordsTest4()
         {
-            string originStr =  "    aaaaa  ";
+            string originStr = "    aaaaa  ";
             string expected = "aaaaa";
 
-            string reversedStr =new ReverseWordsInAString().ReverseWords(originStr);
+            string reversedStr = new ReverseWordsInAString().ReverseWords(originStr);
 
-            Assert.AreEqual(expected,reversedStr);
+            Assert.AreEqual(expected, reversedStr);
         }
 
         [Test()]
         public void ReverseWordsTest5()
         {
-            string originStr =  "";
-            string expected = "";
+            string originStr = string.Empty;
+            string expected = string.Empty;
 
-            string reversedStr =new ReverseWordsInAString().ReverseWords(originStr);
+            string reversedStr = new ReverseWordsInAString().ReverseWords(originStr);
 
-            Assert.AreEqual(expected,reversedStr);
+            Assert.AreEqual(expected, reversedStr);
         }
-
     }
 }

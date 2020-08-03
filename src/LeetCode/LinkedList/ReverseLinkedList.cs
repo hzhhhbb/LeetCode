@@ -5,7 +5,7 @@
     /// </summary>
     public class ReverseLinkedList
     {
-        //迭代
+        // 迭代
         public ListNode ReverseList(ListNode head)
         {
             if (head == null || head.next == null)
@@ -28,7 +28,7 @@
             return prevNode;
         }
 
-        //递归 //todo
+        // 递归 //todo
         public ListNode ReverseList1(ListNode head)
         {
             if (head == null || head.next == null)

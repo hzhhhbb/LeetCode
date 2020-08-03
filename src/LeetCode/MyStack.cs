@@ -9,6 +9,7 @@ namespace LeetCode
     public class MyStack
     {
         private Queue<int> q1 = new Queue<int>();
+
         private Queue<int> q2 = new Queue<int>();
 
         /** Initialize your data structure here. */
@@ -74,6 +75,7 @@ namespace LeetCode
         }
     }
 }
+
 /**
  * Your MyStack object will be instantiated and called as such:
  * MyStack obj = new MyStack();

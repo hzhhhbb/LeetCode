@@ -1,6 +1,8 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
+
 using LeetCode.HashTable;
-using System.Collections.Generic;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
 {
@@ -10,13 +12,13 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void GroupAnagramsTest()
         {
-            string[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
+            string[] input = { "eat", "tea", "tan", "ate", "nat", "bat" };
             List<List<string>> expected = new List<List<string>>();
-            expected.Add(new List<string>(){"eat","tea","ate"});
-            expected.Add(new List<string>(){"tan","nat"});
-            expected.Add(new List<string>(){"bat"});
+            expected.Add(new List<string>() { "eat", "tea", "ate" });
+            expected.Add(new List<string>() { "tan", "nat" });
+            expected.Add(new List<string>() { "bat" });
 
-            Assert.AreEqual(expected,new GroupAnagramsClass().GroupAnagrams(input));
+            Assert.AreEqual(expected, new GroupAnagramsClass().GroupAnagrams(input));
         }
     }
 }

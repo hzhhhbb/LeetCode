@@ -9,24 +9,25 @@ namespace LeetCode.HashTable
     /// </summary>
     public class GroupAnagramsClass
     {
-        public IList<IList<string>> GroupAnagrams(string[] strs) 
+        public IList<IList<string>> GroupAnagrams(string[] strs)
         {
             if (strs.Length == 0)
             {
                 return new List<IList<string>>();
             }
-            Dictionary<string,IList<string>> result=new Dictionary<string, IList<string>>();
+
+            Dictionary<string, IList<string>> result = new Dictionary<string, IList<string>>();
 
             foreach (string str in strs)
             {
                 var s = str.ToCharArray();
                 Array.Sort(s);
-                string key = string.Join("", s);
+                string key = string.Join(string.Empty, s);
                 if (result.ContainsKey(key))
                 {
                     if (result[key] == null)
                     {
-                        result[key]=new List<string>(){str};
+                        result[key] = new List<string>() { str };
                     }
                     else
                     {
@@ -35,7 +36,7 @@ namespace LeetCode.HashTable
                 }
                 else
                 {
-                    result.Add(key,new List<string>(){str});
+                    result.Add(key, new List<string>() { str });
                 }
             }
 

@@ -40,15 +40,15 @@ namespace LeetCode
                         while (neighbors.Any())
                         {
                             var item = neighbors.Dequeue();
-                            if (item.Item1 >= 0 && item.Item1 < nr && item.Item2 >= 0 && item.Item2 < nc
-                                && grid[item.Item1][item.Item2] == '1')
+                            if (item.Item1 >= 0 && item.Item1 < nr && item.Item2 >= 0 && item.Item2 < nc && grid[item.Item1][item.Item2] == '1')
                             {
                                 grid[item.Item1][item.Item2] = '0';
 
-                                //上、下节点
+                                // 上、下节点
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1 + 1, item.Item2));
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1 - 1, item.Item2));
-                                //左、右节点
+
+                                // 左、右节点
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1, item.Item2 + 1));
                                 neighbors.Enqueue(new Tuple<int, int>(item.Item1, item.Item2 - 1));
                             }

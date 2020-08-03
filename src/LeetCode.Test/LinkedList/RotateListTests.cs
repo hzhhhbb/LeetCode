@@ -10,7 +10,7 @@ namespace LeetCode.Tests.LinkedList
         [Test()]
         public void RotateRightTest()
         {
-            //旋转次数小于链表长度
+            // 旋转次数小于链表长度
             ListNode head = new ListNode(1);
             ListNode node2 = new ListNode(2);
             ListNode node3 = new ListNode(3);
@@ -41,7 +41,7 @@ namespace LeetCode.Tests.LinkedList
         [Test()]
         public void RotateRightTest1()
         {
-            //旋转次数大于链表长度
+            // 旋转次数大于链表长度
             ListNode head = new ListNode(0);
             ListNode node2 = new ListNode(1);
             ListNode node3 = new ListNode(2);
@@ -64,20 +64,20 @@ namespace LeetCode.Tests.LinkedList
         [Test()]
         public void RotateRightTest2()
         {
-            //链表为空
+            // 链表为空
             ListNode head = null;
 
             int k = 4;
 
             ListNode expectedhead = null;
 
-            Assert.IsTrue(expectedhead== new RotateList().RotateRight(head, k));
+            Assert.IsTrue(expectedhead == new RotateList().RotateRight(head, k));
         }
 
         [Test()]
         public void RotateRightTest3()
         {
-            //只有一个节点
+            // 只有一个节点
             ListNode head = new ListNode(0);
 
             int k = 4;

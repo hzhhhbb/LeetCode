@@ -1,6 +1,8 @@
-﻿using NUnit.Framework;
+﻿using System.Linq;
+
 using LeetCode.HashTable;
-using System.Linq;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
 {
@@ -10,12 +12,12 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void TopKFrequentTest()
         {
-            int[] nums = {1, 1, 1, 2, 2, 3};
+            int[] nums = { 1, 1, 1, 2, 2, 3 };
             int k = 2;
-            int[] expected = {1, 2};
+            int[] expected = { 1, 2 };
             for (int i = 0; i < expected.Length; i++)
             {
-                var result=new TopKFrequentElements().TopKFrequent(nums,k);
+                var result = new TopKFrequentElements().TopKFrequent(nums, k);
                 if (!result.Contains(expected[i]))
                 {
                     Assert.Fail();
@@ -28,12 +30,12 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void TopKFrequentTest1()
         {
-            int[] nums = {1};
+            int[] nums = { 1 };
             int k = 1;
-            int[] expected = {1};
+            int[] expected = { 1 };
             for (int i = 0; i < expected.Length; i++)
             {
-                var result=new TopKFrequentElements().TopKFrequent(nums,k);
+                var result = new TopKFrequentElements().TopKFrequent(nums, k);
                 if (!result.Contains(expected[i]))
                 {
                     Assert.Fail();
@@ -46,12 +48,12 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void TopKFrequentTest2()
         {
-            int[] nums = {1,2};
+            int[] nums = { 1, 2 };
             int k = 2;
-            int[] expected = {1,2};
+            int[] expected = { 1, 2 };
             for (int i = 0; i < expected.Length; i++)
             {
-                var result=new TopKFrequentElements().TopKFrequent(nums,k);
+                var result = new TopKFrequentElements().TopKFrequent(nums, k);
                 if (!result.Contains(expected[i]))
                 {
                     Assert.Fail();

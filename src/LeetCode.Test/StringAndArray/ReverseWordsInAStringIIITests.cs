@@ -13,7 +13,7 @@
             string input = "Let's take LeetCode contest";
             string expected = "s'teL ekat edoCteeL tsetnoc";
 
-            Assert.AreEqual(expected,new ReverseWordsInAStringIII().ReverseWords(input));
+            Assert.AreEqual(expected, new ReverseWordsInAStringIII().ReverseWords(input));
         }
     }
 }

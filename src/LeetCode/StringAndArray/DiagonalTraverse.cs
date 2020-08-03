@@ -20,7 +20,7 @@ namespace LeetCode.StringAndArray
             int rowMaxIndex = matrix.Length - 1;
             int columnMaxIndex = matrix[0].Length - 1;
 
-            //指向为右上方为正向
+            // 指向为右上方为正向
             bool isPositive = true;
             int count = 0;
             int matrixCount = matrix.Length * matrix[0].Length;
@@ -28,7 +28,7 @@ namespace LeetCode.StringAndArray
 
             while (count < matrixCount)
             {
-                //正向遍历
+                // 正向遍历
                 if (isPositive)
                 {
                     if (nodeIndex.Item1 < 0 && nodeIndex.Item2 <= columnMaxIndex)
@@ -47,8 +47,9 @@ namespace LeetCode.StringAndArray
                     result.Add(matrix[nodeIndex.Item1][nodeIndex.Item2]);
                     nodeIndex = new Tuple<int, int>(nodeIndex.Item1 - 1, nodeIndex.Item2 + 1);
                 }
-                else //反向遍历
+                else
                 {
+                    // 反向遍历
                     if (nodeIndex.Item2 < 0 && nodeIndex.Item1 <= rowMaxIndex)
                     {
                         nodeIndex = new Tuple<int, int>(nodeIndex.Item1, nodeIndex.Item2 + 1);

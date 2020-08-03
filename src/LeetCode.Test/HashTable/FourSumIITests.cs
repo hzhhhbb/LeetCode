@@ -1,5 +1,6 @@
-﻿using NUnit.Framework;
-using LeetCode.HashTable;
+﻿using LeetCode.HashTable;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
 {
@@ -9,14 +10,13 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void FourSumCountTest()
         {
-
-            int[] A = {1, 2};
-            int[] B = {-2, -1};
-            int[] C = {-1, 2};
-            int[] D = {0, 2};
+            int[] A = { 1, 2 };
+            int[] B = { -2, -1 };
+            int[] C = { -1, 2 };
+            int[] D = { 0, 2 };
             int expected = 2;
 
-            Assert.AreEqual(expected,new FourSumII().FourSumCount(A,B,C,D));
+            Assert.AreEqual(expected, new FourSumII().FourSumCount(A, B, C, D));
         }
     }
 }

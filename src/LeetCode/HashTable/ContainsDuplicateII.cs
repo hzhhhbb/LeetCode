@@ -5,12 +5,11 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 219. 存在重复元素 II
     /// </summary>
-   public class ContainsDuplicateII
+    public class ContainsDuplicateII
     {
-
-        public bool ContainsNearbyDuplicate(int[] nums, int k) 
+        public bool ContainsNearbyDuplicate(int[] nums, int k)
         {
-            Dictionary<int,int> dic=new Dictionary<int, int>();
+            Dictionary<int, int> dic = new Dictionary<int, int>();
             for (int index = 0; index < nums.Length; index++)
             {
                 if (dic.ContainsKey(nums[index]))
@@ -26,7 +25,7 @@ namespace LeetCode.HashTable
                 }
                 else
                 {
-                    dic.Add(nums[index],index);
+                    dic.Add(nums[index], index);
                 }
             }
 

@@ -15,7 +15,7 @@
                 int sum = numbers[start] + numbers[end];
                 if (sum == target)
                 {
-                    return new int[2] {start + 1, end + 1};
+                    return new int[2] { start + 1, end + 1 };
                 }
                 else if (sum < target)
                 {
@@ -27,7 +27,7 @@
                 }
             }
 
-            return new int[2] {-1, -1};
+            return new int[2] { -1, -1 };
         }
     }
 }

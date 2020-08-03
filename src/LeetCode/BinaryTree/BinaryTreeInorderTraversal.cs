@@ -8,7 +8,7 @@ namespace LeetCode.BinaryTree
     /// </summary>
     public class BinaryTreeInorderTraversal
     {
-        //中序遍历顺序：左节点、根节点、右节点
+        // 中序遍历顺序：左节点、根节点、右节点
 
         // 递归算法
         public IList<int> InorderTraversal(TreeNode root)
@@ -38,30 +38,28 @@ namespace LeetCode.BinaryTree
             }
         }
 
-
         // 迭代算法
         public IList<int> InorderTraversalOfIteration(TreeNode root)
         {
-            List<int> result=new List<int>();
+            List<int> result = new List<int>();
             if (root == null)
             {
                 return result;
             }
 
-            Stack<TreeNode> stack=new Stack<TreeNode>();
+            Stack<TreeNode> stack = new Stack<TreeNode>();
             TreeNode curr = root;
-            while (stack.Any()||curr!=null)
+            while (stack.Any() || curr != null)
             {
-                while (curr!=null)
+                while (curr != null)
                 {
-                   stack.Push(curr);
-                   curr = curr.left;
+                    stack.Push(curr);
+                    curr = curr.left;
                 }
 
                 curr = stack.Pop();
                 result.Add(curr.val);
                 curr = curr.right;
-
             }
 
             return result;

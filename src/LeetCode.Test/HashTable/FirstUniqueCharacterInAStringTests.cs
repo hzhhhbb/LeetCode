@@ -1,5 +1,6 @@
-﻿using NUnit.Framework;
-using LeetCode.HashTable;
+﻿using LeetCode.HashTable;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
 {
@@ -12,7 +13,7 @@ namespace LeetCode.Tests.HashTable
             string input = "leetcode";
             int expected = 0;
 
-            Assert.AreEqual(expected,new FirstUniqueCharacterInAString().FirstUniqChar(input));
+            Assert.AreEqual(expected, new FirstUniqueCharacterInAString().FirstUniqChar(input));
         }
 
         [Test()]
@@ -21,7 +22,7 @@ namespace LeetCode.Tests.HashTable
             string input = "loveleetcode";
             int expected = 2;
 
-            Assert.AreEqual(expected,new FirstUniqueCharacterInAString().FirstUniqChar(input));
+            Assert.AreEqual(expected, new FirstUniqueCharacterInAString().FirstUniqChar(input));
         }
 
         [Test()]
@@ -30,7 +31,7 @@ namespace LeetCode.Tests.HashTable
             string input = "lllllllllll";
             int expected = -1;
 
-            Assert.AreEqual(expected,new FirstUniqueCharacterInAString().FirstUniqChar(input));
+            Assert.AreEqual(expected, new FirstUniqueCharacterInAString().FirstUniqChar(input));
         }
 
         [Test()]
@@ -39,7 +40,7 @@ namespace LeetCode.Tests.HashTable
             string input = "luluiliooi";
             int expected = -1;
 
-            Assert.AreEqual(expected,new FirstUniqueCharacterInAString().FirstUniqChar(input));
+            Assert.AreEqual(expected, new FirstUniqueCharacterInAString().FirstUniqChar(input));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace LeetCode.BinaryTree
 {
     public class BinaryTreePostorderTraversal
     {
-        //中序遍历顺序：左节点、根节点、右节点
+        // 中序遍历顺序：左节点、根节点、右节点
 
         // 递归解法
         public IList<int> PostorderTraversal(TreeNode root)
@@ -63,7 +63,7 @@ namespace LeetCode.BinaryTree
                     stack.Push(node.right);
                 }
             }
-            
+
             result.Reverse();
             return result;
         }

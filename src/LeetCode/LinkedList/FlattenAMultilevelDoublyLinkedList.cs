@@ -102,7 +102,6 @@
                 }
             }
 
-
             return isEqual;
         }
     }

@@ -14,16 +14,9 @@ namespace LeetCode.StringAndArray
             {
                 int[] newItem = item;
 
-                if (
-                    mergedIntervals.Any()
-                    && item[0] >= mergedIntervals.Last()[0]
-                    && item[0] <= mergedIntervals.Last()[1])
+                if (mergedIntervals.Any() && item[0] >= mergedIntervals.Last()[0] && item[0] <= mergedIntervals.Last()[1])
                 {
-                    newItem = new int[]
-                    {
-                        mergedIntervals.Last()[0],
-                        mergedIntervals.Last()[1] > item[1] ? mergedIntervals.Last()[1] : item[1]
-                    };
+                    newItem = new int[] { mergedIntervals.Last()[0], mergedIntervals.Last()[1] > item[1] ? mergedIntervals.Last()[1] : item[1] };
                     mergedIntervals.Remove(mergedIntervals.Last());
                 }
 

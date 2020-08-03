@@ -45,7 +45,7 @@ namespace LeetCode
                         for (int d = -1; d <= 1; d = d + 2)
                         {
                             int y = ((node[i] - '0') + d + 10) % 10;
-                            string nei = node.Substring(0, i) + ("" + y) + node.Substring(i + 1);
+                            string nei = node.Substring(0, i) + (string.Empty + y) + node.Substring(i + 1);
                             if (!seen.Contains(nei))
                             {
                                 seen.Add(nei);

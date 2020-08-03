@@ -1,4 +1,5 @@
 ﻿using LeetCode.StringAndArray;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.StringAndArray
@@ -14,7 +15,7 @@ namespace LeetCode.Tests.StringAndArray
 
             string result = new LongestPalindromicSubstring().LongestPalindrome(origin);
 
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
 
         [Test()]
@@ -24,7 +25,7 @@ namespace LeetCode.Tests.StringAndArray
             string expected = "bab";
 
             string result = new LongestPalindromicSubstring().LongestPalindrome(origin);
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
     }
 }

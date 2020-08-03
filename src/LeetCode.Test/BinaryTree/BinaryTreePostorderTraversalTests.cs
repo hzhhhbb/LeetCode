@@ -1,8 +1,10 @@
-﻿using NUnit.Framework;
-using LeetCode.BinaryTree;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+
+using LeetCode.BinaryTree;
+
+using NUnit.Framework;
 
 namespace LeetCode.Tests.BinaryTree
 {
@@ -16,7 +18,7 @@ namespace LeetCode.Tests.BinaryTree
             root.right = new TreeNode(2);
             root.right.left = new TreeNode(3);
 
-            IList<int> expected = new List<int>() {3, 2, 1};
+            IList<int> expected = new List<int>() { 3, 2, 1 };
             var result = new BinaryTreePostorderTraversal().PostorderTraversal(root);
             Assert.AreEqual(expected, result);
         }
@@ -32,7 +34,16 @@ namespace LeetCode.Tests.BinaryTree
             root.right.left = new TreeNode(6);
             root.right.right = new TreeNode(7);
 
-            IList<int> expected = new List<int>() {4, 5, 2, 6, 7, 3, 1};
+            IList<int> expected = new List<int>()
+                                      {
+                                          4,
+                                          5,
+                                          2,
+                                          6,
+                                          7,
+                                          3,
+                                          1
+                                      };
             var result = new BinaryTreePostorderTraversal().PostorderTraversal(root);
             Assert.AreEqual(expected, result);
         }
@@ -42,7 +53,7 @@ namespace LeetCode.Tests.BinaryTree
         {
             TreeNode root = new TreeNode(1);
 
-            IList<int> expected = new List<int>() {1};
+            IList<int> expected = new List<int>() { 1 };
             var result = new BinaryTreePostorderTraversal().PostorderTraversal(root);
             Assert.AreEqual(expected, result);
         }
@@ -64,7 +75,7 @@ namespace LeetCode.Tests.BinaryTree
             root.right = new TreeNode(2);
             root.right.left = new TreeNode(3);
 
-            IList<int> expected = new List<int>() {3,2,1};
+            IList<int> expected = new List<int>() { 3, 2, 1 };
             var result = new BinaryTreePostorderTraversal().PostorderTraversalOfIteration(root);
             Assert.AreEqual(expected, result);
         }
@@ -80,7 +91,16 @@ namespace LeetCode.Tests.BinaryTree
             root.right.left = new TreeNode(6);
             root.right.right = new TreeNode(7);
 
-            IList<int> expected = new List<int>() {4, 5, 2, 6, 7, 3, 1};
+            IList<int> expected = new List<int>()
+                                      {
+                                          4,
+                                          5,
+                                          2,
+                                          6,
+                                          7,
+                                          3,
+                                          1
+                                      };
             var result = new BinaryTreePostorderTraversal().PostorderTraversalOfIteration(root);
             Assert.AreEqual(expected, result);
         }
@@ -90,7 +110,7 @@ namespace LeetCode.Tests.BinaryTree
         {
             TreeNode root = new TreeNode(1);
 
-            IList<int> expected = new List<int>() {1};
+            IList<int> expected = new List<int>() { 1 };
             var result = new BinaryTreePostorderTraversal().PostorderTraversalOfIteration(root);
             Assert.AreEqual(expected, result);
         }

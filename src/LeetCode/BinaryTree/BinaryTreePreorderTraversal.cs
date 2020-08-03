@@ -11,7 +11,7 @@ namespace LeetCode.BinaryTree
         // 递归算法
         public IList<int> PreorderTraversal(TreeNode root)
         {
-            //遍历顺序：根节点、左节点、右节点
+            // 遍历顺序：根节点、左节点、右节点
             var result = new List<int>();
             this.Preorder(root, ref result);
             return result;
@@ -35,7 +35,8 @@ namespace LeetCode.BinaryTree
             {
                 return result;
             }
-            Stack<TreeNode> stack=new Stack<TreeNode>();
+
+            Stack<TreeNode> stack = new Stack<TreeNode>();
             stack.Push(root);
             while (stack.Any())
             {

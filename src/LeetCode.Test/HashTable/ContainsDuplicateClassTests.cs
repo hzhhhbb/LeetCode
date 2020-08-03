@@ -1,4 +1,5 @@
 ﻿using LeetCode.HashTable;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
@@ -9,7 +10,7 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void ContainsDuplicateTest()
         {
-            int[] input = new int[] {1, 2, 3, 1};
+            int[] input = new int[] { 1, 2, 3, 1 };
             bool expected = true;
             Assert.AreEqual(expected, new ContainsDuplicateClass().ContainsDuplicate(input));
         }
@@ -17,7 +18,7 @@ namespace LeetCode.Tests.HashTable
         [Test()]
         public void ContainsDuplicateTest1()
         {
-            int[] input = new int[] {1, 2, 3, 4};
+            int[] input = new int[] { 1, 2, 3, 4 };
             bool expected = false;
             Assert.AreEqual(expected, new ContainsDuplicateClass().ContainsDuplicate(input));
         }

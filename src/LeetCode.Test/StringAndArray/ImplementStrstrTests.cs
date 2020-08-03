@@ -1,4 +1,5 @@
 ﻿using LeetCode.StringAndArray;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.StringAndArray
@@ -13,10 +14,9 @@ namespace LeetCode.Tests.StringAndArray
             string needle = "ll";
             int expectation = 2;
 
-            Assert.AreEqual(expectation,new ImplementStrstr().StrStr(haystack,needle));
+            Assert.AreEqual(expectation, new ImplementStrstr().StrStr(haystack, needle));
         }
 
-        
         [Test()]
         public void StrStrTest1()
         {
@@ -24,17 +24,17 @@ namespace LeetCode.Tests.StringAndArray
             string needle = "bba";
             int expectation = -1;
 
-            Assert.AreEqual(expectation,new ImplementStrstr().StrStr(haystack,needle));
+            Assert.AreEqual(expectation, new ImplementStrstr().StrStr(haystack, needle));
         }
 
         [Test()]
         public void StrStrTest2()
         {
             string haystack = "aaaaa";
-            string needle = "";
-            int expectation = 0;//我觉得这里应该返回-1，c#的indexof就是返回-1
+            string needle = string.Empty;
+            int expectation = 0; // 我觉得这里应该返回-1，c#的indexof就是返回-1
 
-            Assert.AreEqual(expectation,new ImplementStrstr().StrStr(haystack,needle));
+            Assert.AreEqual(expectation, new ImplementStrstr().StrStr(haystack, needle));
         }
 
         [Test()]
@@ -44,7 +44,7 @@ namespace LeetCode.Tests.StringAndArray
             string needle = "issip";
             int expectation = 4;
 
-            Assert.AreEqual(expectation,new ImplementStrstr().StrStr(haystack,needle));
+            Assert.AreEqual(expectation, new ImplementStrstr().StrStr(haystack, needle));
         }
     }
 }

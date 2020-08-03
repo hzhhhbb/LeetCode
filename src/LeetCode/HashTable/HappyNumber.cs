@@ -5,15 +5,15 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 202. 快乐数
     /// </summary>
-   public class HappyNumber
+    public class HappyNumber
     {
         public bool IsHappy(int n)
         {
-            HashSet<int> visited=new HashSet<int>();
+            HashSet<int> visited = new HashSet<int>();
             visited.Add(n);
-            while (n!=1)
+            while (n != 1)
             {
-                n= this.GetNextNumber(n);
+                n = this.GetNextNumber(n);
                 if (visited.Contains(n))
                 {
                     return false;
@@ -30,7 +30,7 @@ namespace LeetCode.HashTable
         private int GetNextNumber(int n)
         {
             int sum = 0;
-            while (n>0)
+            while (n > 0)
             {
                 int d = n % 10;
                 n = n / 10;

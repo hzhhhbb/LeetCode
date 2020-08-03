@@ -27,9 +27,7 @@ namespace LeetCode
 
                 readNodeIndex.Add(string.Concat(tempNode.Item1, tempNode.Item2), string.Empty);
 
-                if (tempNode.Item1 >= 0 && tempNode.Item1 < image.Length
-                                        && tempNode.Item2 >= 0 && tempNode.Item2 < image[0].Length
-                                        && image[tempNode.Item1][tempNode.Item2] == originColor)
+                if (tempNode.Item1 >= 0 && tempNode.Item1 < image.Length && tempNode.Item2 >= 0 && tempNode.Item2 < image[0].Length && image[tempNode.Item1][tempNode.Item2] == originColor)
                 {
                     image[tempNode.Item1][tempNode.Item2] = newColor;
                     node.Enqueue(new Tuple<int, int>(tempNode.Item1 + 1, tempNode.Item2));

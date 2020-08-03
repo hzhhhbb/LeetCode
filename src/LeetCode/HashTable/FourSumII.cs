@@ -5,12 +5,12 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 454. 四数相加 II
     /// </summary>
-   public class FourSumII
+    public class FourSumII
     {
-        public int FourSumCount(int[] A, int[] B, int[] C, int[] D) 
+        public int FourSumCount(int[] A, int[] B, int[] C, int[] D)
         {
-            Dictionary<int,int> abSum=new Dictionary<int, int>();
-            Dictionary<int,int> cdSum=new Dictionary<int, int>();
+            Dictionary<int, int> abSum = new Dictionary<int, int>();
+            Dictionary<int, int> cdSum = new Dictionary<int, int>();
 
             foreach (int i in A)
             {
@@ -22,7 +22,7 @@ namespace LeetCode.HashTable
                     }
                     else
                     {
-                        abSum.Add(i+j,1);
+                        abSum.Add(i + j, 1);
                     }
                 }
             }
@@ -37,7 +37,7 @@ namespace LeetCode.HashTable
                     }
                     else
                     {
-                        cdSum.Add(i+j,1);
+                        cdSum.Add(i + j, 1);
                     }
                 }
             }

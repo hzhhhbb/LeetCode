@@ -12,7 +12,7 @@ namespace LeetCode.StringAndArray
         {
             if (!strs.Any())
             {
-                return "";
+                return string.Empty;
             }
 
             if (strs.Length == 1)
@@ -29,19 +29,19 @@ namespace LeetCode.StringAndArray
                 {
                     if (strs[rowIndex].Length - 1 < columnIndex)
                     {
-                        return string.Join("", chars);
+                        return string.Join(string.Empty, chars);
                     }
 
                     if (!tempStr.Equals(strs[rowIndex][columnIndex]))
                     {
-                        return string.Join("", chars);
+                        return string.Join(string.Empty, chars);
                     }
                 }
 
                 chars.Add(tempStr);
             }
 
-            return string.Join("", chars);
+            return string.Join(string.Empty, chars);
         }
     }
 }

@@ -13,27 +13,27 @@ namespace LeetCode.HashTable
         private Dictionary<int, int> _valueAndIndexes;
 
         /** Initialize your data structure here. */
-        public RandomizedSet() 
+        public RandomizedSet()
         {
-            _container=new List<int>();
-            _valueAndIndexes=new Dictionary<int, int>();
+            _container = new List<int>();
+            _valueAndIndexes = new Dictionary<int, int>();
         }
-    
+
         /** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
-        public bool Insert(int val) 
+        public bool Insert(int val)
         {
             if (!_valueAndIndexes.ContainsKey(val))
             {
                 _container.Add(val);
-                _valueAndIndexes.Add(val,_container.Count-1);
+                _valueAndIndexes.Add(val, _container.Count - 1);
                 return true;
             }
 
             return false;
         }
-    
+
         /** Removes a value from the set. Returns true if the set contained the specified element. */
-        public bool Remove(int val) 
+        public bool Remove(int val)
         {
             if (_valueAndIndexes.ContainsKey(val))
             {
@@ -47,21 +47,21 @@ namespace LeetCode.HashTable
 
                     _valueAndIndexes[_container[valueIndex]] = valueIndex;
 
-                    _container.RemoveAt(_container.Count-1);
+                    _container.RemoveAt(_container.Count - 1);
                     _valueAndIndexes.Remove(val);
                 }
                 else
                 {
-                    _container.RemoveAt(_container.Count-1);
+                    _container.RemoveAt(_container.Count - 1);
                     _valueAndIndexes.Remove(val);
                 }
-               
+
                 return true;
             }
 
             return false;
         }
-    
+
         /** Get a random element from the set. */
         public int GetRandom()
         {

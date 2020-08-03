@@ -1,4 +1,5 @@
 ﻿using LeetCode.HashTable;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.HashTable
@@ -11,7 +12,7 @@ namespace LeetCode.Tests.HashTable
         {
             int input = 19;
             bool expected = true;
-            Assert.AreEqual(expected,new HappyNumber().IsHappy(input));
+            Assert.AreEqual(expected, new HappyNumber().IsHappy(input));
         }
 
         [Test()]
@@ -19,7 +20,7 @@ namespace LeetCode.Tests.HashTable
         {
             int input = 0;
             bool expected = false;
-            Assert.AreEqual(expected,new HappyNumber().IsHappy(input));
+            Assert.AreEqual(expected, new HappyNumber().IsHappy(input));
         }
 
         [Test()]
@@ -27,7 +28,7 @@ namespace LeetCode.Tests.HashTable
         {
             int input = 1;
             bool expected = true;
-            Assert.AreEqual(expected,new HappyNumber().IsHappy(input));
+            Assert.AreEqual(expected, new HappyNumber().IsHappy(input));
         }
     }
 }

@@ -11,24 +11,19 @@
             {
                 for (int j = i; j < matrix.Length - 1 - i; j++)
                 {
-                    //左上和右上交换
+                    // 左上和右上交换
                     matrix[i][j] = matrix[i][j] ^ matrix[j][matrix.Length - 1 - i];
                     matrix[j][matrix.Length - 1 - i] = matrix[i][j] ^ matrix[j][matrix.Length - 1 - i];
                     matrix[i][j] = matrix[i][j] ^ matrix[j][matrix.Length - 1 - i];
 
+                    // 左下和右下交换
+                    matrix[matrix.Length - 1 - j][i] = matrix[matrix.Length - 1 - j][i] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
+                    matrix[matrix.Length - 1 - i][matrix.Length - 1 - j] = matrix[matrix.Length - 1 - j][i] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
+                    matrix[matrix.Length - 1 - j][i] = matrix[matrix.Length - 1 - j][i] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
 
-                    //左下和右下交换
-                    matrix[matrix.Length - 1 - j][i] = matrix[matrix.Length - 1 - j][i] ^
-                                                       matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
-                    matrix[matrix.Length - 1 - i][matrix.Length - 1 - j] =
-                        matrix[matrix.Length - 1 - j][i] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
-                    matrix[matrix.Length - 1 - j][i] = matrix[matrix.Length - 1 - j][i] ^
-                                                       matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
-
-                    //左上和右下交换
+                    // 左上和右下交换
                     matrix[i][j] = matrix[i][j] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
-                    matrix[matrix.Length - 1 - i][matrix.Length - 1 - j] =
-                        matrix[i][j] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
+                    matrix[matrix.Length - 1 - i][matrix.Length - 1 - j] = matrix[i][j] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
                     matrix[i][j] = matrix[i][j] ^ matrix[matrix.Length - 1 - i][matrix.Length - 1 - j];
                 }
             }

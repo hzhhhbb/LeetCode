@@ -15,7 +15,7 @@
             }
 
             // 统计nums1数字出现的次数
-            Dictionary<int,int> numAndTimes=new Dictionary<int, int>();
+            Dictionary<int, int> numAndTimes = new Dictionary<int, int>();
             foreach (int i in nums1)
             {
                 if (numAndTimes.ContainsKey(i))
@@ -24,11 +24,11 @@
                 }
                 else
                 {
-                    numAndTimes.Add(i,1);
+                    numAndTimes.Add(i, 1);
                 }
             }
 
-            List<int> repeatedNum=new List<int>();
+            List<int> repeatedNum = new List<int>();
             foreach (int i in nums2)
             {
                 if (numAndTimes.ContainsKey(i))

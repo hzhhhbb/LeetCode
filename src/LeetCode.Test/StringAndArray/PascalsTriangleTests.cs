@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+
 using LeetCode.StringAndArray;
+
 using NUnit.Framework;
 
 namespace LeetCode.Tests.StringAndArray
@@ -12,11 +14,19 @@ namespace LeetCode.Tests.StringAndArray
         {
             int input = 5;
             IList<IList<int>> expected = new List<IList<int>>();
-            expected.Add(new List<int>() {1});
-            expected.Add(new List<int>() {1, 1});
-            expected.Add(new List<int>() {1, 2, 1});
-            expected.Add(new List<int>() {1, 3, 3, 1});
-            expected.Add(new List<int>() {1, 4, 6, 4, 1});
+            expected.Add(new List<int>() { 1 });
+            expected.Add(new List<int>() { 1, 1 });
+            expected.Add(new List<int>() { 1, 2, 1 });
+            expected.Add(new List<int>() { 1, 3, 3, 1 });
+            expected.Add(
+                new List<int>()
+                    {
+                        1,
+                        4,
+                        6,
+                        4,
+                        1
+                    });
 
             Assert.AreEqual(expected, new PascalsTriangle().Generate(input));
         }
@@ -35,8 +45,8 @@ namespace LeetCode.Tests.StringAndArray
         {
             int input = 2;
             IList<IList<int>> expected = new List<IList<int>>();
-            expected.Add(new List<int>() {1});
-            expected.Add(new List<int>() {1, 1});
+            expected.Add(new List<int>() { 1 });
+            expected.Add(new List<int>() { 1, 1 });
 
             Assert.AreEqual(expected, new PascalsTriangle().Generate(input));
         }
@@ -46,12 +56,29 @@ namespace LeetCode.Tests.StringAndArray
         {
             int input = 6;
             IList<IList<int>> expected = new List<IList<int>>();
-            expected.Add(new List<int>() {1});
-            expected.Add(new List<int>() {1, 1});
-            expected.Add(new List<int>() {1, 2, 1});
-            expected.Add(new List<int>() {1, 3, 3, 1});
-            expected.Add(new List<int>() {1, 4, 6, 4, 1});
-            expected.Add(new List<int>() {1, 5, 10, 10, 5, 1});
+            expected.Add(new List<int>() { 1 });
+            expected.Add(new List<int>() { 1, 1 });
+            expected.Add(new List<int>() { 1, 2, 1 });
+            expected.Add(new List<int>() { 1, 3, 3, 1 });
+            expected.Add(
+                new List<int>()
+                    {
+                        1,
+                        4,
+                        6,
+                        4,
+                        1
+                    });
+            expected.Add(
+                new List<int>()
+                    {
+                        1,
+                        5,
+                        10,
+                        10,
+                        5,
+                        1
+                    });
 
             Assert.AreEqual(expected, new PascalsTriangle().Generate(input));
         }

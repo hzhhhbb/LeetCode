@@ -17,9 +17,9 @@
 
             while (start < end)
             {
-                s[start] = (char) (s[start] ^ s[end]);
-                s[end] = (char) (s[start] ^ s[end]);
-                s[start] = (char) (s[start] ^ s[end]);
+                s[start] = (char)(s[start] ^ s[end]);
+                s[end] = (char)(s[start] ^ s[end]);
+                s[start] = (char)(s[start] ^ s[end]);
 
                 start++;
                 end--;

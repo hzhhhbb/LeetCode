@@ -11,12 +11,12 @@
         public void CopyRandomListTest()
         {
             // 此测试只测试了值相等的情况，未测试random的情况
-            Node head=new Node(0);
-            Node node1=new Node(1);
-            Node node2=new Node(2);
-            Node node3=new Node(3);
-            Node node4=new Node(4);
-            Node node5=new Node(5);
+            Node head = new Node(0);
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+            Node node4 = new Node(4);
+            Node node5 = new Node(5);
             Node node6 = new Node(6);
 
             head.next = node1;
@@ -30,8 +30,6 @@
             node2.random = null;
             node3.random = node5;
             node6.random = node2;
-
-
 
             Node expected = new Node(0);
             Node expectednode1 = new Node(1);

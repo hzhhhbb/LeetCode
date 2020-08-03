@@ -29,21 +29,21 @@ namespace LeetCode.Tests
         [Test()]
         public void PopTest()
         {
-            Assert.True(obj.Pop()==3);
+            Assert.True(obj.Pop() == 3);
         }
 
         [Order(4)]
         [Test()]
         public void TopTest()
         {
-            Assert.True(obj.Top()==2);
+            Assert.True(obj.Top() == 2);
         }
 
         [Order(5)]
         [Test()]
         public void EmptyTest()
         {
-            Assert.True(obj.Empty()==false);
+            Assert.True(obj.Empty() == false);
         }
     }
 }

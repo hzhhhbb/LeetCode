@@ -7,12 +7,12 @@ namespace LeetCode.HashTable
     /// <summary>
     /// 36. 有效的数独
     /// </summary>
-   public class ValidSudoku
+    public class ValidSudoku
     {
-        public bool IsValidSudoku(char[][] board) 
+        public bool IsValidSudoku(char[][] board)
         {
-            Dictionary<char,List<Tuple<int,int>>> numIndexes=new Dictionary<char, List<Tuple<int,int>>>(board.Length);
-            Dictionary<int,List<char>> areaNums= new Dictionary<int,List<char>>(board.Length);
+            Dictionary<char, List<Tuple<int, int>>> numIndexes = new Dictionary<char, List<Tuple<int, int>>>(board.Length);
+            Dictionary<int, List<char>> areaNums = new Dictionary<int, List<char>>(board.Length);
             for (int i = 0; i < board.Length; i++)
             {
                 for (int j = 0; j < board[i].Length; j++)
@@ -22,6 +22,7 @@ namespace LeetCode.HashTable
                     {
                         continue;
                     }
+
                     if (numIndexes.ContainsKey(tempChar))
                     {
                         var tempList = numIndexes[tempChar];
@@ -29,11 +30,12 @@ namespace LeetCode.HashTable
                         {
                             return false;
                         }
-                        tempList.Add(new Tuple<int, int>(i,j));
+
+                        tempList.Add(new Tuple<int, int>(i, j));
                     }
                     else
                     {
-                        numIndexes.Add(tempChar,new List<Tuple<int, int>>(){new Tuple<int, int>(i,j)});
+                        numIndexes.Add(tempChar, new List<Tuple<int, int>>() { new Tuple<int, int>(i, j) });
                     }
 
                     int areaNo = this.GetAreaNo(i, j);
@@ -44,11 +46,12 @@ namespace LeetCode.HashTable
                         {
                             return false;
                         }
+
                         tempList.Add(tempChar);
                     }
                     else
                     {
-                        areaNums.Add(areaNo,new List<char>(){tempChar});
+                        areaNums.Add(areaNo, new List<char>() { tempChar });
                     }
                 }
             }
