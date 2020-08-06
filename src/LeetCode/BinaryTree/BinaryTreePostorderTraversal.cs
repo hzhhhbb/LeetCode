@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace LeetCode.BinaryTree
 {
+    /// <summary>
+    /// 145. 二叉树的后序遍历
+    /// </summary>
     public class BinaryTreePostorderTraversal
     {
-        // 中序遍历顺序：左节点、根节点、右节点
+        // 后序遍历顺序：根节点、右节点、左节点
 
         // 递归解法
         public IList<int> PostorderTraversal(TreeNode root)
