@@ -8,10 +8,9 @@ namespace LeetCode.BinaryTree
     /// </summary>
     public class PopulatingNextRightPointersInEachNodeII
     {
+        // 广度遍历，空间、时间复杂度O(n)
         public Node Connect(Node root)
         {
-            //空间、时间复杂度O(n)
-
             if (root == null)
             {
                 return root;
@@ -61,6 +60,54 @@ namespace LeetCode.BinaryTree
             }
 
             // Since the tree has now been modified, return the root node
+            return root;
+        }
+
+        // 空间复杂度O(1)、时间复杂度O(N)
+        public Node Connect1(Node root)
+        {
+            if (root == null)
+            {
+                return root;
+            }
+
+            Node farLeftNode = root;
+            Node currNode = farLeftNode;
+
+
+            Node prevNode = null;
+
+            while (farLeftNode!=null)
+            {
+                prevNode = null;
+                currNode = farLeftNode;
+                farLeftNode = null;
+
+                while (currNode!=null)
+                {
+                    ProcessChildNode(currNode.left);
+                    ProcessChildNode(currNode.right);
+                    currNode = currNode.next;
+                }
+            }
+
+            void ProcessChildNode(Node childNode)
+            {
+                if (childNode != null)
+                {
+                    if (prevNode == null)
+                    {
+                        farLeftNode = childNode;
+                    }
+                    else
+                    {
+                        prevNode.next = childNode;
+                    }
+
+                    prevNode = childNode;
+                }
+            }
+
             return root;
         }
     }
