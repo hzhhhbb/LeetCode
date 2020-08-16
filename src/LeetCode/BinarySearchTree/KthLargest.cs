@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LeetCode.BinarySearchTree
 {
@@ -21,7 +20,7 @@ namespace LeetCode.BinarySearchTree
        
         public int Add(int val)
         {
-            if (nodeList.Count == 0)
+            if (nodeList.Count == 0||nodeList.First.Value >=val)
             {
                 nodeList.AddFirst(val);
             }
@@ -31,10 +30,31 @@ namespace LeetCode.BinarySearchTree
             }
             else
             {
-                // todo优化
-                int value = nodeList.First(u => u >= val);
-                var node = nodeList.Find(value);
-                nodeList.AddBefore(node, new LinkedListNode<int>(val));
+                LinkedListNode<int> node = nodeList.First;
+                LinkedListNode<int> lastNode = nodeList.Last;
+                while (node!=null||lastNode!=null)
+                {
+                    if (node != null)
+                    {
+                        if (node.Value >= val)
+                        {
+                            nodeList.AddBefore(node, new LinkedListNode<int>(val));
+                            break;
+                        }
+                        node = node.Next;
+                    }
+
+                    if (lastNode != null)
+                    {
+                        if (lastNode.Value <= val)
+                        {
+                            nodeList.AddAfter(lastNode, new LinkedListNode<int>(val));
+                            break;
+                        }
+
+                        lastNode = lastNode.Previous;
+                    }
+                }
             }
 
             //获取kth的值
