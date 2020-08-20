@@ -1,11 +1,8 @@
-﻿using NUnit.Framework;
+﻿using System.Collections.Generic;
 using LeetCode.NAryTree;
+using NUnit.Framework;
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LeetCode.Tests.BinarySearchTree
+namespace LeetCode.Tests.NAryTree
 {
     [TestFixture()]
     public class NAryTreePreorderTraversalTests
