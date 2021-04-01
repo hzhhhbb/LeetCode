@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace LeetCode.StringAndArray
 {
+    /// <summary>
+    /// 90. 子集 II
+    /// </summary>
     public class Subsets
     {
         public IList<IList<int>> SubsetsWithDup(int[] nums)
